@@ -5,4 +5,4 @@ CREATE TABLE Exchange_Rate (
   PRIMARY KEY(from_currency, to_currency)
 );
 
-INSERT INTO Exchange_Rate VALUES ("EUR", "USD", 150), ("USD", "EUR", 62);
+INSERT INTO Exchange_Rate VALUES ("EUR", "USD", 120), ("USD", "EUR", 83);
