@@ -15,7 +15,7 @@ public class ExchangeRateDataSpy implements ExchangeRateData {
     }
 
     @Override
-    public ExchangeRate getExchangeRate(String fromCurrency, String toCurrency) throws SQLException {
+    public ExchangeRate getExchangeRate(String fromCurrency, String toCurrency) {
         fromCurrencies.add(fromCurrency);
         toCurrencies.add(toCurrency);
         return new ExchangeRate(fromCurrency, toCurrency, BigDecimal.valueOf(120));

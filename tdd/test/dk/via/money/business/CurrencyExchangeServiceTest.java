@@ -16,7 +16,7 @@ public class CurrencyExchangeServiceTest {
     private CurrencyExchangeService service;
 
     @BeforeEach
-    public void setUp() throws SQLException {
+    public void setUp() {
         eur100 = new Money(BigDecimal.valueOf(100), "EUR");
         usd120 = new Money(BigDecimal.valueOf(120), "USD");
         ExchangeRateDataFake data = new ExchangeRateDataFake();

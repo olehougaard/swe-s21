@@ -1,6 +1,5 @@
 package dk.via.money.business;
 
-import dk.via.money.model.ExchangeRate;
 import dk.via.money.model.Money;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

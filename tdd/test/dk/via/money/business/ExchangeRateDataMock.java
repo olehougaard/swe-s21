@@ -56,7 +56,7 @@ public class ExchangeRateDataMock implements ExchangeRateData {
     }
 
     @Override
-    public ExchangeRate getExchangeRate(String fromCurrency, String toCurrency) throws SQLException {
+    public ExchangeRate getExchangeRate(String fromCurrency, String toCurrency) {
         if (actualCalls.size() >= expectedCalls.size()) throw new AssertionFailedError("Unexpected Call");
         Call expectedCall = expectedCalls.get(actualCalls.size());
         if (!expectedCall.validate(fromCurrency, toCurrency)) throw new AssertionFailedError("Unexpected parameters");
