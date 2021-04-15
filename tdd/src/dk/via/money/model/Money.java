@@ -47,4 +47,9 @@ public class Money {
     public Money divide(BigDecimal valueOf) {
         return new Money(amount.divide(valueOf, RoundingMode.HALF_UP), currency);
     }
+
+    @Override
+    public String toString() {
+        return String.format("%s %s", amount, currency);
+    }
 }
